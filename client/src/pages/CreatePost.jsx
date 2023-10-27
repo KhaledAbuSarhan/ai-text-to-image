@@ -29,7 +29,7 @@ const CreatePost = () => {
     if(form.prompt) {
       try {
         SetGeneratingImg(true);
-        const response = await fetch(`http://localhost:8081/api/v1/dalle`, {
+        const response = await fetch(`https://text-to-image-ai-kzg6.onrender.com/api/v1/dalle`, {
           method: 'POST',
           headers: {
             'Content-Type' : 'application/json'
@@ -55,7 +55,7 @@ const CreatePost = () => {
     if(form?.prompt && form?.photo) {
       setLoading(true)
       try {
-        const response = await fetch('http://localhost:8081/api/v1/post', {
+        const response = await fetch('https://text-to-image-ai-kzg6.onrender.com/api/v1/post', {
           method: 'POST',
           headers: {
             'Content-Type' : 'application/json'

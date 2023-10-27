@@ -1,1 +1,1 @@
-# ai-text-to-image
+# server-client-ai-mage-generator
